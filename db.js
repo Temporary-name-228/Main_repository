@@ -3,6 +3,7 @@ const mysql = require('mysql2');
 const app = express();
 const port = 3000;
 
+
 // Подключение к базе данных
 const connection = mysql.createConnection({
   host: 'localhost',
