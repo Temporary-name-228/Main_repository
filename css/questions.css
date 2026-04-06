@@ -1,0 +1,109 @@
+.questions {
+    background-color: #121315;
+    padding: var(--val72) 0;
+}
+
+.container_r {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: var(--gapp);
+    align-items: stretch;
+
+    width: 100%;
+    max-width: calc((100% - var(--mw)) / 2 + var(--mw));
+    margin: 0 auto 0 0;
+}
+
+.questions-left {
+    position: relative;
+    flex: 1;
+}
+
+.questions-img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--rouu);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.questions-form {
+    flex: 1;
+    max-width: 808px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 100%;
+    height: 64px;
+    background-color: #27282A;
+    border: none;
+    border-radius: var(--rouu);
+    padding: 0 var(--gapp);
+    box-shadow: 0 0 0 1px #fff;
+    transition: ease-in-out 0.2s;
+}
+
+.form-input::placeholder {
+    color: rgba(255,255,255,0.25);
+}
+
+.form-input:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px #6F25D6;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #E12848;
+}
+
+select.form-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='white'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right var(--val24) center;
+    background-size: var(--val40);
+}
+
+
+
+
+@media (max-width: 1512px) {
+    .form-input {
+        height: 64px;
+    }
+}
+@media (max-width: 1254px) {
+    .form-input {
+        height: 56px;
+    }
+}
+@media (max-width: 876px) {
+    .form-input {
+        height: 48px;
+    }
+}
+@media (max-width: 678px) {
+    .form-input {
+        height: 40px;
+    }
+    .container_r{
+        flex-direction: column;
+    }
+    .questions-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .questions-form {
+        max-width: calc((100% - var(--mw)) / 8 + var(--mw));
+        margin: 0 0 0 auto;
+    }
+}

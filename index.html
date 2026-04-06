@@ -7,60 +7,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inside.css">
+    <link rel="stylesheet" href="css/benefits.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a href="/" class="logo"><img src="img/logo.png" alt="Logo" width="131" height="77"></a>
+                <a href="/" class="logo"><img src="img/logo.png" alt="Logo"></a>
                 <div class="header-actions">
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><img src="img/vk.png" alt="Social"></a>
-                        <a href="#" class="social-icon"><img src="img/inst.png" alt="Social"></a>
-                        <a href="#" class="social-icon"><img src="img/telega.png" alt="Social"></a>
+                        <a href="#" class="social-icon"><img src="img/media/vk.png" alt="Social"></a>
+                        <a href="#" class="social-icon"><img src="img/media/inst.png" alt="Social"></a>
+                        <a href="#" class="social-icon"><img src="img/media/telega.png" alt="Social"></a>
                     </div>
-                    <button class="btn-download-header">Скачать</button>
-                    <a href="#" class="profile-icon"><img src="img/lk.png" alt="Profile"></a>
+                    <button class="btn-download-header button_text">Скачать</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">Local music party</h1>
-                    <div class="hero-subtitle">Мобильное приложение для поиска<br>локальных мероприятий</div>
-                    <button class="hero-btn">Скачать</button>
-                </div>
-                <div class="hero-image"><img src="img/mokap1.png" alt="Music Party" width="500" height="440"></div>
-            </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Local music party</h1>
+                <div class="main_text">Мобильное приложение для поиска локальных мероприятий</div>
+                <button class="hero-btn button_text">Скачать</button>
+             </div>
+            <div class="hero-image"><img src="img/mokap1.png" alt="Music Party"></div>
         </div>
-    </main>
+    </div>
+    
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="inside">
         <div class="container">
-            <h2 class="inside-title">Что внутри?</h2>
+            <h1>Что внутри?</h1>
             <div class="content-wrapper">
                 <div class="left-section">
                     <div class="cards-row">
-                        <div class="card"><div class="card-inner"><img src="img/afisha.png" class="card-icon"><div class="card-text">Афиша<br>музыкальных<br>мероприятий</div></div></div>
-                        <div class="card"><div class="card-inner"><img src="img/karta.png" class="card-icon"><div class="card-text">Карта, на которой<br>легко найти<br>ближайшие<br>мероприятия</div></div></div>
+                        <div class="card">
+                            <img src="img/icons/afisha.png" class="card-icon">
+                            <div class="main_text">Афиша музыкальных мероприятий</div>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/karta.png" class="card-icon">
+                            <div class="main_text">Карта, на которой легко найти ближайшие мероприятия</div>
+                        </div>
                     </div>
                     <div class="bottom-cards">
-                <div class="bottom-card">
-                    <img src="img/anons.png" class="bottom-icon">
-                    <div class="bottom-text">Анонсы концертов, зарубежных артистовв,<br>которые редко приезжают в Россию</div>
+                <div class="card">
+                    <img src="img/icons/anons.png" class="card-icon">
+                    <div class="main_text">Анонсы концертов, зарубежных артистовв, которые редко приезжают в Россию</div>
                 </div>
-                <div class="bottom-card">
-                    <img src="img/koncert.png" class="bottom-icon">
-                    <div class="bottom-text">Большая подборка концертов,<br>в том числе локальных артистов</div>
+                <div class="card">
+                    <img src="img/icons/koncert.png" class="card-icon">
+                    <div class="main_text">Большая подборка концертов, в том числе локальных артистов</div>
                 </div>
-                <div class="bottom-card">
-                    <img src="img/poisk.png" class="bottom-icon">
-                    <div class="bottom-text">Удобный поиск по исполнителям,<br>жанрам, городам и площадкам</div>
+                <div class="card">
+                    <img src="img/icons/poisk.png" class="card-icon">
+                    <div class="main_text">Удобный поиск по исполнителям, жанрам, городам и площадкам</div>
                 </div>
             </div>
                 </div>
@@ -73,184 +90,272 @@
                 </div>
             </div>
             <div class="earn-cards">
-                <div class="earn-card-small"><img src="img/eda.png" class="earn-img"></div>
-                <div class="earn-card-large"><div class="earn-text">Зарабатывайте на посещениях ресторанов<br>и заказе доставки.<br><span class="earn-highlight">+10%</span> от каждого заказа на ваш счёт!</div></div>
+                <div class="earn-card-small">
+                    <img src="img/eda.png" class="earn-img">
+                </div>
+                <div class="earn-card-large"><div class="main_text">Зарабатывайте на посещениях ресторанов и заказе доставки.<br><span class="earn-highlight">+10%</span> от каждого заказа на ваш счёт!</div></div>
             </div>
         </div>
     </section>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="benefits">
         <div class="container">
-            <h2 class="benefits-title">Чем полезно?</h2>
+            <h1>Чем полезно?</h1>
             <div class="benefits-grid">
-                <div class="benefits-left-col">
-                    <div class="mockup6">
-                        <img src="img/mokap6.png" width="400" height="810" alt="mockup 6">
+                <div class="item_1">
+                    <div class="mockup_b">
+                        <img src="img/mokap6.png" alt="mockup 6">
                     </div>
+                </div>
+                <div class="item_2">
                     <div class="user-card">
                         <div class="user-card-content">
-                            <h3 class="user-card-title">Для пользователя</h3>
-                            <p class="user-card-text">
-                                Не пропустит концерт любимого исполнителя. Сможет<br>
-                                открыть для себя новые музыкальные мероприятия.<br>
-                                Откроет для себя новых, набирающих популярность<br>
-                                артиста/группу. Сможет запланировать поход на<br>
+                            <h2 class="card-title">Для пользователя</h2>
+                            <div class="main_text">
+                                Не пропустит концерт любимого исполнителя. Сможет
+                                открыть для себя новые музыкальные мероприятия.
+                                Откроет для себя новых, набирающих популярность
+                                артиста/группу. Сможет запланировать поход на
                                 мероприятие заранее
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="benefits-right-col">
+                <div class="item_3">
+                    <div class="gif-card">
+                        <img src="img/disk.gif" class="small-card-img" alt="animated disc">
+                    </div>
+                </div>
+                <div class="item_4">
                     <div class="organizer-card">
                         <div class="organizer-card-content">
-                            <h3 class="organizer-card-title">Для организатора</h3>
-                            <p class="organizer-card-text">
-                                Ты сам предлагаешь мероприятия через наш сайт, после<br>
-                                проверки модератором анонс появится в приложении.<br>
-                                Стоимость размещения бесплатна. Ты можешь добавить<br>
+                            <h2 class="card-title">Для организатора</h2>
+                            <div class="main_text">
+                                Ты сам предлагаешь мероприятия через наш сайт, после
+                                проверки модератором анонс появится в приложении.
+                                Стоимость размещения бесплатна. Ты можешь добавить
                                 своё мероприятие уже сейчас
-                            </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="hybrid-row">
-                        <div class="gif-card">
-                            <img src="img/disk.gif" class="small-card-img" alt="animated disc">
-                        </div>
-                        <div class="mockup7">
-                            <img src="img/mokap7.png" alt="mockup 7">
-                        </div>
+                </div>
+                <div class="item_5">
+                    <div class="mockup_b">
+                        <img src="img/mokap7.png" alt="mockup 7">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <section class="events">
         <div class="container">
-            <h2 class="events-title">Не упусти момент!</h2>
-            <div class="events-subtitle">Уже сейчас запишись на мероприятие</div>
+            <h1>Не упусти момент!</h1>
+            <h2>Уже сейчас запишись на мероприятие</h2>
             <div class="events-slider-wrapper">
                 <button class="events-slider-btn events-prev"><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="white" stroke-width="2"/></svg></button>
-                <div class="events-card-container"><div class="events-card"><div class="events-card-content"><h3 class="event-title">Полина Гагарина</h3><div class="event-details-row"><span class="event-label">Жанр:</span><span class="event-genre">Поп</span><span class="event-venue">СКА Арена</span></div><p class="event-description">Полина Гагарина — «певица от Бога», «голос, который никого не оставляет<br>равнодушным», «тембр, от которого мурашки бегут по коже» — именно это<br>говорят о ней чаще всего, как о певице, с её юных лет. Хрупкость и мощь,<br>пластика и ценность, невероятная сила голоса — всё это составляет<br>феномен Полины Гагарины, как артиста.</p><div class="event-price-date"><div class="event-price">от <span class="price-value">3 500</span> р</div><div class="event-date">8 марта, воскресенье, 19:00</div></div><button class="event-book-btn">Забронировать</button></div></div></div>
+                        <div class="events-card-container">
+
+                            <div class="events-card active">
+                                <div class="events-card-content">
+                                    <h2>Полина Гагарина</h2>
+                                    <div class="event-details-row">
+                                        <div>
+                                            <span class="main_text">Жанр:</span>
+                                            <span class="main_text highlight">Поп</span>
+                                        </div>
+                                        <div>
+                                            <span class="main_text">СКА Арена</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_text">Полина Гагарина — «певица от Бога», «голос, который никого не оставляет равнодушным», «тембр, от которого мурашки бегут по коже» — именно это говорят о ней чаще всего, как о певице, с её юных лет. Хрупкость и мощь, пластика и ценность, невероятная сила голоса — всё это составляет феномен Полины Гагарины, как артиста.</div>
+                                    <div class="event-price-date">
+                                        <div class="main_text">от <span class="main_text highlight">3 500</span> р</div>
+                                        <div class="main_text">8 марта, воскресенье, 19:00</div>
+                                    </div>
+                                    <button class="event-book-btn button_text">Забронировать</button>
+                                </div>
+                            </div>
+
+                            <div class="events-card">
+                                <div class="events-card-content">
+                                    <h2>Ваня Дмитриенко</h2>
+                                    <div class="event-details-row">
+                                        <div>
+                                            <span class="main_text">Жанр:</span>
+                                            <span class="main_text highlight">Поп</span>
+                                        </div>
+                                        <div>
+                                            <span class="main_text">Газпром Арена</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_text">Ваня Дмитриенко — самый молодой артист в России. 2025 год стал для Вани по‑настоящему феноменальным. Его треки занимали вершины чартов, а тур прошёл с аншлагами во всех городах. Артист дважды собрал «Мегаспорт» в Москве и добился такого же успеха в Санкт-Петербурге в Ледовом дворце.</div>
+                                    <div class="event-price-date">
+                                        <div class="main_text">от <span class="main_text highlight">1 600</span> р</div>
+                                        <div class="main_text">12 декабря, суббота, 19:00</div>
+                                    </div>
+                                    <button class="event-book-btn button_text">Забронировать</button>
+                                </div>
+                            </div>
+
+                            <div class="events-card">
+                                <div class="events-card-content">
+                                    <h2>Элджей</h2>
+                                    <div class="event-details-row">
+                                        <div>
+                                            <span class="main_text">Жанр:</span>
+                                            <span class="main_text highlight">Хип-хоп и рэп</span>
+                                        </div>
+                                        <div>
+                                            <span class="main_text">СКА Арена</span>
+                                        </div>
+                                    </div>
+                                    <div class="main_text">Элджей объявляет всероссийское стадионное шоу Gameboy и анонсирует долгожданные сольные концерты! Один из самых прослушиваемых и обсуждаемых артистов страны дает старт своим долгожданным сольным выступлениям по всей России. Эти выступления станут открытием нового концепта от артиста под названием Gameboy Arena Show.</div>
+                                    <div class="event-price-date">
+                                        <div class="main_text">от <span class="main_text highlight">4 000</span> р</div>
+                                        <div class="main_text">18 апреля, суббота, 20:00</div>
+                                    </div>
+                                    <button class="event-book-btn button_text">Забронировать</button>
+                                </div>
+                            </div>
+
+                        </div>
                 <button class="events-slider-btn events-next"><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="white" stroke-width="2"/></svg></button>
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <section class="faq">
         <div class="container">
-            <h2 class="faq-title">FAQ</h2>
+            <h1>FAQ</h1>
 
             <div class="faq-item">
-                <div class="faq-text">Приложение платное?</div>
-                <div class="faq-icon"><img src="img/lk.png" alt="icon"></div>
+                <div class="main_text faq-text W_30">Приложение платное?</div>
+                <div class="faq-icon"><img src="img/icons/lk.png" alt="icon"></div>
             </div>
 
             <div class="faq-item reverse">
                 <div class="faq-icon"><img src="img/faq.png" alt="icon"></div>
-                <div class="faq-text-large">Local Music Party — приложение для всех<br>артистов. Мы не знаем слова «популярность»,<br>никого не выделяем и не продвигаем, поэтому<br>ты можешь узнать полную информацию обо<br>всех музыкальных мероприятиях твоего города</div>
+                <div class="main_text faq-text W_60">Local Music Party — приложение для всех артистов. Мы не знаем слова «популярность», никого не выделяем и не продвигаем, поэтому ты можешь узнать полную информацию обо всех музыкальных мероприятиях твоего города</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-text-medium">Как добавляются мероприятия<br>в приложение?</div>
-                <div class="faq-icon"><img src="img/lk.png" alt="icon"></div>
+                <div class="main_text faq-text W_45">Как добавляются мероприятия в приложение?</div>
+                <div class="faq-icon"><img src="img/icons/lk.png" alt="icon"></div>
             </div>
 
             <div class="faq-item reverse">
                 <div class="faq-icon"><img src="img/faq.png" alt="icon"></div>
-                <div class="faq-text-medium">Ты сам предлагаешь мероприятия через<br>наш сайт. Модераторы проверяют<br>информацию и публикуют</div>
+                <div class="main_text faq-text W_60">Ты сам предлагаешь мероприятия через наш сайт. Модераторы проверяют информацию и публикуют</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-text-medium">Я хочу опубликовать анонс о своём<br>мероприятии, что делать?</div>
-                <div class="faq-icon"><img src="img/lk.png" alt="icon"></div>
+                <div class="main_text faq-text W_45">Я хочу опубликовать анонс о своём мероприятии, что делать?</div>
+                <div class="faq-icon"><img src="img/icons/lk.png" alt="icon"></div>
             </div>
 
             <div class="faq-item reverse">
                 <div class="faq-icon"><img src="img/faq.png" alt="icon"></div>
-                <div class="faq-text-small">Скачать прямо сейчас!</div>
+                <div class="main_text faq-text W_30">Скачать прямо сейчас!</div>
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <section class="download">
-        <div class="container">
+        <div class="container_l">
             <div class="download-left">
-                <h2 class="download-title">Скачай уже сейчас</h2>
+                <h1>Скачай уже сейчас</h1>
                 <div class="download-buttons">
-                    <img src="img/google.png" class="download-img">
-                    <img src="img/app.png" class="download-img">
+                    <a href="https://www.youtube.com/"><img src="img/download/google.png" class="download-img"></a>
+                    <a href="https://www.youtube.com/"><img src="img/download/app.png" class="download-img"></a>
                 </div>
             </div>
             <div class="download-right">
-                <img src="img/fon.png" class="bg-img">
-                <img src="img/ruka.png" class="fg-img">
+                <div class="crop">   
+                    <img src="img/fon.png" class="bg-img">
+                    <img src="img/ruka.png" class="fg-img">
+                </div>
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <section class="questions">
         <div class="container">
+            <h1 style="margin-bottom: 32px;">Уже не терпится?</h1>
+        </div>
+        <div class="container_r">
             <div class="questions-left">
-                <h2 class="questions-title">Остались вопросы?</h2>
+                
                 <img src="img/mikro.png" class="questions-img">
             </div>
             <div class="questions-form">
-                <div class="form-header">
-                    <p class="form-subtitle">Заполните форму и запишитесь<br>на лучшие мероприятия года</p>
-                </div>
+                <h3>Заполните форму и запишитесь на лучшие мероприятия года</h3>
                 <form id="feedbackForm">
-                    <div class="form-group">
-                        <label>Имя</label>
+                    <div>
+                        <div class="main_text">Имя</div>
                         <input type="text" class="form-input" name="name" placeholder="Введите ваше имя" required>
                     </div>
-                    <div class="form-group">
-                        <label>E-mail</label>
+                    <div>
+                        <div class="main_text">E-mail</div>
                         <input type="email" class="form-input" name="email" placeholder="Введите ваш email" required>
                     </div>
-                    <div class="form-group">
-                        <label>Телефон</label>
+                    <div>
+                        <div class="main_text">Телефон</div>
                         <input type="tel" class="form-input" name="phone" placeholder="Введите ваш телефон" required>
                     </div>
-                    <div class="form-group">
-                        <label>Мероприятие</label>
+                    <div>
+                        <div class="main_text">Мероприятие</div>
                         <select class="form-input" name="event" required>
-                            <option>Филипп Киркоров</option>
                             <option>Полина Гагарина</option>
-                            <option>Анна Асти</option>
-                            <option>Жасмин</option>
-                            <option>Алсу</option>
+                            <option>Ваня Дмитриенко</option>
+                            <option>Элджей</option>
                         </select>
                     </div>
-                    <button type="submit" class="form-btn">Отправить</button>
+                    <button type="submit" class="event-book-btn button_text">Отправить</button>
                 </form>
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
-                <img src="img/footer-logo.png" class="footer-logo">
-                <div class="footer-text">Мобильное приложение для поиска локальных мероприятий</div>
+                <a href="#" class="logo"><img src="img/footer-logo.png" alt="Logo"></a>
+                <div class="add_footer_1">Мобильное приложение для поиска локальных мероприятий</div>
             </div>
             <div class="footer-links">
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Условия использования</a>
-                <a href="#">Поддержка</a>
-                <div class="footer-icons">
-                    <a href="#" class="footer-icon"><img src="img/vk.png" alt="Social"></a>
-                    <a href="#" class="footer-icon"><img src="img/inst.png" alt="Social"></a>
-                    <a href="#" class="footer-icon"><img src="img/telega.png" alt="Profile"></a>
+                <div class="links">
+                    <a href="#" class="add_footer_2">Политика конфиденциальности</a>
+                    <a href="#" class="add_footer_2">Условия использования</a>
+                    <a href="#" class="add_footer_2">Поддержка</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="img/media/vk.png" alt="Social"></a>
+                    <a href="#" class="social-icon"><img src="img/media/inst.png" alt="Social"></a>
+                    <a href="#" class="social-icon"><img src="img/media/telega.png" alt="Profile"></a>
                 </div>
             </div>
-            <div class="footer-copyright">© 2026 Local music party. Все права защищены.</div>
+            <div class="add_footer_2 footer-copyright">© 2026 Local music party. Все права защищены.</div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="script.js"></script>
-    <script src="slider.js"></script>
-    <script src="scroll.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/events-slider.js"></script>
+    <script src="js/img_swap.js"></script>
 </body>
 </html>

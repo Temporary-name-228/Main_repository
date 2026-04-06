@@ -1,0 +1,79 @@
+.download {
+    background-color: #18191C;
+    padding: 0;
+}
+
+.container_l {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: var(--gapp);
+    align-items: stretch;
+
+    width: 100%;
+    max-width: calc((100% - var(--mw)) / 2 + var(--mw));
+    margin: 0 0 0 auto;
+}
+
+.download-left {
+    position: relative;
+    z-index: 2;
+    width: 45%;
+    min-width: 280px;
+    padding: var(--val72) 0px;
+}
+
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapp);
+}
+
+.download-buttons a {
+    display: inline-block;
+}
+
+.download-img {
+    height: auto;
+    width: 55%;
+    cursor: pointer;
+    display: block;
+}
+
+
+.download-right {
+    position: relative;
+    flex: 1;
+    overflow: visible;
+}
+
+.bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: 0;
+    width: 100%;
+    height: 91%;
+    object-position: left;
+}
+
+.fg-img {
+    position: absolute;
+    bottom: 0;
+    right: calc(6% * 6%);
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.crop{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    height: 110%;
+    width: 100%;
+}

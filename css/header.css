@@ -1,0 +1,60 @@
+.header {
+    padding: 12px 0;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    max-width: 131px;
+    max-height: 77px;
+    min-height: 32px;
+    height: 5vw;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--gapp);
+    flex-wrap: wrap;
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--gapp);
+}
+
+.social-icon {
+    width: var(--val64);
+    height: var(--val64);
+    background-color: #27282A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-icon img {
+    width: var(--val64);
+    height: var(--val64);
+}
+
+.btn-download-header {
+    height: var(--val64);
+    padding: var(--val16) var(--val64);
+    background-color: #6F25D6;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+}
